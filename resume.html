@@ -7,10 +7,90 @@
     <title>Resume</title>
 
     <style>
-        body {
+        :root {
+            --base-pt: 11pt;
+            --line-height: 1.3;
+            --gutter-xs: 3pt;
+            --gutter-sm: 6pt;
+            --gutter-md: 10pt;
+            --gutter-lg: 18pt;
+            --gutter-xlg: 20pt;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            font-size: 11pt;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 36pt 36pt 24pt;
+            font-size: var(--base-pt);
+            line-height: var(--line-height);
+        }
+
+
+        /* Header */
+        body > header {
+            text-align: center;
+            margin-bottom: var(--gutter-lg);
+        }
+
+        header h1 {
+            font-size: 22pt;
+            font-weight: 700;
+            letter-spacing: 0.25pt;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        header a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        /* Section */
+        section h2 {
+            margin-bottom: var(--gutter-xs);
+            border-bottom: solid 1px;
+            font-weight: 500;
+            font-variant: small-caps;
+        }
+
+        section header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section article {
+            padding: 0 var(--gutter-md);
+            margin-bottom: var(--gutter-sm);
+        }
+
+        section article p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section article ul {
+            padding-left: var(--gutter-xlg);
+        }
+
+        section dl {
+            padding: 0 var(--gutter-md);
+        }
+
+        section dt,
+        section dd {
+            display: inline;
+        }
+
+        section dt {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -50,6 +130,7 @@
                 <em>Aug. 2014 &mdash; May 2018</em>
             </p>
         </article>
+    </section>
 
     <section>
         <h2>Experience</h2>
@@ -111,7 +192,9 @@
 
         <article>
             <header>
-                <strong>Gitlytics</strong> | <em>Python, Flask, React, PostgreSQL, Docker</em>
+                <div>
+                    <strong>Gitlytics</strong> | <em>Python, Flask, React, PostgreSQL, Docker</em>
+                </div>
                 <span>June 2020 &mdash; Present</span>
             </header>
             <ul>
@@ -124,7 +207,9 @@
 
         <article>
             <header>
-                <strong>Simple Paintball</strong> | <em>Spigot API, Java, Maven, TravisCI, Git</em>
+                <div>
+                    <strong>Simple Paintball</strong> | <em>Spigot API, Java, Maven, TravisCI, Git</em>
+                </div>
                 <span>May 2018 &mdash; May 2020</span>
             </header>
             <ul>
@@ -142,18 +227,22 @@
         <dl>
             <dt>Languages:</dt>
             <dd>Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R</dd>
+        </dl>
 
+        <dl>
             <dt>Frameworks:</dt>
             <dd>React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI</dd>
+        </dl>
 
+        <dl>
             <dt>Developer Tools:</dt>
             <dd>Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse</dd>
+        </dl>
 
+        <dl>
             <dt>Libraries:</dt>
             <dd>pandas, NumPy, Matplotlib</dd>
         </dl>
-    </section>
-
     </section>
 
 </body>
