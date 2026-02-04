@@ -3,5 +3,5 @@
 
 Based off of [jakegut/resume](https://github.com/jakegut/resume/)
 
-View [PDF](resume.pnf)
+View [PDF](resume.pdf)
 ![Resume preview](resume.jpg)
