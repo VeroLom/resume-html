@@ -3,5 +3,5 @@
 
 Based off of [jakegut/resume](https://github.com/jakegut/resume/)
 
-View [PDF](resume.pdf)
+Download preview [PDF](https://raw.githubusercontent.com/VeroLom/resume-html/master/resume.pdf)
 ![Resume preview](resume.jpg)
